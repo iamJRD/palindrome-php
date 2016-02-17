@@ -5,9 +5,9 @@ class PalindromeTest extends PHPUnit_Framework_TestCase {
 
     function test_checkPalindrome_true() {
         //arrange
-        $new_palindrome = new Palindrome;
         $input = "noon";
-
+        $new_palindrome = new Palindrome($input);
+        
         //act
         $result = $new_palindrome->checkPalindrome($input);
 
@@ -17,8 +17,8 @@ class PalindromeTest extends PHPUnit_Framework_TestCase {
 
     function test_checkPalindrome_false() {
         //arrange
-        $new_palindrome = new Palindrome;
         $input = "dog";
+        $new_palindrome = new Palindrome($input);
 
         //act
         $result = $new_palindrome->checkPalindrome($input);
