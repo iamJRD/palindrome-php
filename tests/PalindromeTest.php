@@ -1,7 +1,7 @@
 <?php
 require_once "src/Palindrome.php";
 
-class  PalindromeTest  extends PHPUnit_Framework_TestCase {
+class PalindromeTest extends PHPUnit_Framework_TestCase {
 
     function test_checkPalindrome_true() {
         //arrange
