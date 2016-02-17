@@ -1,6 +1,8 @@
 <?php
 class Palindrome {
 
+// BREAKS OUR TESTS FOR SOME REASON
+
     // private $word_input;
     //
     // function __construct($new_word_input)
@@ -20,12 +22,12 @@ class Palindrome {
 
     function checkPalindrome($word_input) {
         $reversedInput = strrev($word_input);
-        echo($word_input);
 
         if ($word_input == $reversedInput) {
-            return true;
+            return "This is a palindrome";
+        } else {
+            return "Not a palindrome";
         }
     }
-
 }
 ?>

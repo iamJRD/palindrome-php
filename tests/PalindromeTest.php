@@ -12,15 +12,19 @@ class  PalindromeTest  extends PHPUnit_Framework_TestCase {
         $result = $new_palindrome->checkPalindrome($input);
 
         //assert
-        $this->assertEquals(true, $result);
+        $this->assertEquals("This is a palindrome", $result);
     }
 
+    function test_checkPalindrome_false() {
+        //arrange
+        $new_palindrome = new Palindrome;
+        $input = "dog";
 
+        //act
+        $result = $new_palindrome->checkPalindrome($input);
+
+        //assert
+        $this->assertEquals("Not a palindrome", $result);
+    }
 }
  ?>
-
-input: noon
-output: true
-
-input burger
-output: false
